@@ -1,0 +1,20 @@
+.homeContainer {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.header {
+  height: 40px;
+  background-color: lightblue;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+}
+
+.formContainer {
+  width: 300px;
+  margin: 30px auto;
+}
