@@ -31,7 +31,6 @@ class Register extends Component {
     try{
       const {auth} = this.state;
       const response = await axios.post('http://localhost:9200/register', { ...auth });
-      console.log(response);
       const {data: {message}} = response;
       this.setState(prevState => ({...prevState, message}))
       if (this.state.message) {
