@@ -9,6 +9,18 @@
 }
 .submit {
   text-align: center;
-  position: absolute;
-  left: 47%;
+  justify-self: center;
+  margin-bottom: 10px;
 }
+
+.loginFormContainer {
+  margin-top: 50%;
+  width: 300px;
+  font-weight: 400;
+  align-items: start;
+}
+
+.loginFormHeader {
+  font-weight: bold;
+}
+

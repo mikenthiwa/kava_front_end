@@ -6,6 +6,7 @@ import { ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import './register.scss';
 import Routes from "../../routes";
+import {Link} from "react-router-dom";
 
 
 
@@ -44,16 +45,16 @@ class Login extends Component {
     return (
       <div className="loginPage">
         <div className="header">
-          <div className="registerFormContainer">
+          <div className="loginFormContainer">
             <form>
-              <div className='formHeader'>Login</div>
+              <div className='loginFormHeader'>Login</div>
 
               <div className="form-group">
                 <label htmlFor="exampleInputEmail1">Email address</label>
                 <input
                   type="email"
                   name="email"
-                  className="form-control"
+                  className="form-control loginEmail"
                   placeholder="Enter email"
                   onChange={this.handleOnchange}
                   required
@@ -76,6 +77,8 @@ class Login extends Component {
                 className="btn btn-primary submit"
                 onClick={this.handleSubmit}
               >Login</button>
+              <div>Create account ? <Link to="/">Register</Link></div>
+
               <ToastContainer />
 
             </form>
