@@ -1,6 +1,7 @@
 import React, {Component, Fragment} from 'react';
 import { toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
+import { Link } from 'react-router-dom'
 import './register.scss';
 
 import axios from 'axios';
@@ -85,6 +86,7 @@ class Register extends Component {
             className="btn btn-primary submit"
             onClick={this.handleSubmit}
           >Submit</button>
+          <div>Already have an account ? <Link to="/login">Login</Link></div>
         </form>
       </div>
     );
